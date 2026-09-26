@@ -26,7 +26,7 @@ export default function MomentPage() {
 
         <section className="moment-head"><span className="moment-head-label"><strong>Moment {String(moment.weddingId === "matt-sophie" ? "04" : "05")}</strong> / détail éditorial</span><span className="folio">01</span></section>
         <section className="moment-hero">
-          <div className="moment-hero-visual"><div className="visual-stamp">Image de démonstration</div>{moment.image && <img src={moment.image} alt={moment.imageAlt ?? "Photographie de démonstration"} />}</div>
+          <div className="moment-hero-visual">{moment.image && <img src={moment.image} alt={moment.imageAlt ?? "Photographie éditoriale de mariage"} />}</div>
           <div className="moment-summary"><div><div className="eyebrow">{moment.location}</div><h2 className="moment-title">{moment.title}</h2><p className="moment-summary-copy">{moment.description}</p></div><div className="moment-time">{moment.time} <span className="muted-caption">· {moment.duration}</span></div></div>
         </section>
 
