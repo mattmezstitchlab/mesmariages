@@ -52,11 +52,11 @@ export function SiteShell({ children, weddingId }: SiteShellProps) {
             {weddingId && <Link href={`/wedding/${weddingId}`} className={isTimeline ? "active" : ""}>Timeline</Link>}
             <button className={searchOpen ? "text-button active-search" : "text-button"} onClick={() => setSearchOpen((open) => !open)} aria-expanded={searchOpen}>Recherche</button>
           </nav>
-          <span className="proto-tag">Prototype 01</span>
+          <span className="proto-tag">Saison 2027</span>
           {searchOpen && <div className="search-panel"><div className="search-input-wrap"><span>⌕</span><input autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Personne, document, moment…" aria-label="Rechercher dans World Wedding" /><button onClick={() => { setQuery(""); setSearchOpen(false); }} aria-label="Fermer la recherche">×</button></div>{query && <div className="search-results">{searchResults.length ? searchResults.map((result) => <Link href={result.href} className="search-result" key={`${result.type}-${result.href}`}><span className="search-result-type">{result.type}</span><span><strong>{result.label}</strong><small>{result.sub}</small></span><span className="search-result-arrow">↗</span></Link>) : <div className="search-empty">Aucun résultat dans les données locales.</div>}</div>}</div>}
         </header>
         {children}
-        <footer className="demo-note">Données de démonstration · Tous les noms, lieux et documents sont fictifs</footer>
+        <footer className="demo-note">MES MARIAGES · Bureau de coordination · Saison 2027</footer>
       </div>
       <nav className="mobile-nav" aria-label="Navigation mobile">
         <Link href="/" className={!weddingId && location === "/" ? "active" : ""}><span className="nav-mark" />Mariages</Link>
