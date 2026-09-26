@@ -322,3 +322,16 @@ a { color: inherit; text-decoration: none; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+
+
+/* Editorial timeline photography */
+.timeline-main{display:flex;align-items:center;gap:22px;min-width:0}
+.timeline-thumb{display:block;width:116px;height:76px;overflow:hidden;flex:none;background:var(--paper-deep)}
+.timeline-thumb img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .5s ease}
+.timeline-item:hover .timeline-thumb img{transform:scale(1.05)}
+.timeline-copy{display:flex;flex-direction:column;min-width:0}
+.timeline-item:hover .timeline-title{color:var(--fuchsia)}
+@media (max-width:720px){
+  .timeline-main{gap:12px}
+  .timeline-thumb{width:82px;height:60px}
+}
