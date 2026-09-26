@@ -220,6 +220,8 @@ export const moments: Moment[] = [
     documentIds: [],
     music: "Silence de travail",
     logistics: ["Accès équipe photo : entrée service", "Café et eau dans la suite", "Prévoir 20 min de battement"],
+    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=88",
+    imageAlt: "Photographie éditoriale de mariage",
   },
   {
     id: "matt-ceremony",
@@ -234,6 +236,8 @@ export const moments: Moment[] = [
     documentIds: [],
     music: "Quatuor à cordes · playlist cérémonie",
     logistics: ["Installation florale : 10:00", "Plan B pluie : salon ouest", "Chaises en deux blocs de 63"],
+    image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1800&q=88",
+    imageAlt: "Photographie éditoriale de mariage",
   },
   {
     id: "matt-photos",
@@ -280,6 +284,8 @@ export const moments: Moment[] = [
     documentIds: ["doc-caterer"],
     music: "Dîner · sélection instrumentale",
     logistics: ["Placement : table unique", "Discours entre service 2 et 3", "Dessert : 21:45"],
+    image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=1800&q=88",
+    imageAlt: "Photographie éditoriale de mariage",
   },
   {
     id: "matt-dance",
@@ -294,6 +300,8 @@ export const moments: Moment[] = [
     documentIds: [],
     music: "Morceau choisi par les mariés",
     logistics: ["Piste dégagée : 22:15", "Lumière chaude uniquement", "Ouverture piste après le morceau"],
+    image: "https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1800&q=88",
+    imageAlt: "Photographie éditoriale de mariage",
   },
   {
     id: "matt-party",
@@ -308,6 +316,8 @@ export const moments: Moment[] = [
     documentIds: [],
     music: "DJ set · ouverture libre",
     logistics: ["Bar côté jardin", "Fin son prévue : 02:00", "Dernier passage navettes : 01:30"],
+    image: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=1800&q=88",
+    imageAlt: "Photographie éditoriale de mariage",
   },
   {
     id: "claire-prep",
@@ -322,6 +332,8 @@ export const moments: Moment[] = [
     documentIds: [],
     music: "Silence de travail",
     logistics: ["Accès photo : escalier est", "Départ couple : 11:25", "Prévoir parapluies transparents"],
+    image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1800&q=88",
+    imageAlt: "Photographie éditoriale de mariage",
   },
   {
     id: "claire-ceremony",
@@ -336,6 +348,8 @@ export const moments: Moment[] = [
     documentIds: ["doc-florals"],
     music: "Piano discret · cérémonie",
     logistics: ["Arche florale : 10:00", "Plan B : grange haute", "Eau fraîche à l’entrée"],
+    image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1800&q=88",
+    imageAlt: "Photographie éditoriale de mariage",
   },
   {
     id: "claire-lunch",
