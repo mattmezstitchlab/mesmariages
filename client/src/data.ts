@@ -1,36 +1,19 @@
-export type Wedding = {
-  id: string;
-  couple: string;
-  dateLabel: string;
-  dateISO?: string;
-  dateShort: string;
-  city: string;
-  countdown: string;
-  guests: number;
-  nextAction: string;
-  status: string;
-  venueId: string;
-  venueLabel?: string;
-  image?: string;
-  imageAlt?: string;
-};
-
-export type Person = {
-  id: string;
-  name: string;
-  role: string;
-  initials: string;
-  email: string;
-  phone: string;
-  note: string;
-};
-
-export type Venue = {
-  id: string;
-  name: string;
-  city: string;
-  address: string;
-  note: string;
+id: "claire-party",
+    weddingId: "claire-thomas",
+    time: "22:30",
+    title: "Soirée",
+    location: "Grange haute · Domaine des Ormes",
+    description: "La grange prend le relais pour la soirée : lumière rasante, piste centrale et programmation DJ progressive.",
+    duration: "03H30",
+    personIds: ["noa-bernard", "antoine-rey"],
+    providerIds: ["noa-bernard"],
+    documentIds: ["doc-dj"],
+    music: "DJ set · montée progressive",
+    logistics: ["Installation régie : 20:00", "Piste centrale libre", "Fin prévue : 02:00"],
+    image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1800&q=88",
+    imageAlt: "Photographie éditoriale de mariage",ttps://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1800&q=88",\n    imageAlt: "Photographie éditoriale de mariage",com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=1800&q=88",\n    imageAlt: "Photographie éditoriale de mariage",verture piste après le morceau"],\n    image: "https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1800&q=88",\n    imageAlt: "Photographie éditoriale de mariage",:45"],\n    image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1800&q=88",\n    imageAlt: "Photographie éditoriale de mariage",n : 14:45", "Accès prestataires : entrée nord", "Comptoir traiteur : aile est"],
+    image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=88",
+    imageAlt: "Photographie éditoriale de mariage",=1800&q=88",\n    imageAlt: "Photographie éditoriale de mariage",te: string;
 };
 
 export type DocumentItem = {
@@ -92,8 +75,8 @@ export const weddings: Wedding[] = [
     status: "À finaliser",
     venueId: "venue-aurora",
     venueLabel: "Maison Aurore",
-    image: "/manus-storage/matt-sophie-paris_c3bbb026.jpg",
-    imageAlt: "Cour parisienne au crépuscule, image de démonstration",
+    image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=88",
+    imageAlt: "Mariage éditorial dans une cour parisienne",
   },
   {
     id: "claire-thomas",
@@ -108,8 +91,8 @@ export const weddings: Wedding[] = [
     status: "En préparation",
     venueId: "venue-ormes",
     venueLabel: "Domaine des Ormes",
-    image: "/manus-storage/claire-thomas-lille_f3be1c74.jpg",
-    imageAlt: "Jardin de château après la pluie, image de démonstration",
+    image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1800&q=88",
+    imageAlt: "Mariage éditorial dans un domaine du Nord",
   },
 ];
 
@@ -265,8 +248,8 @@ export const moments: Moment[] = [
     documentIds: ["doc-photographer"],
     music: "Playlist calme · volume fond",
     logistics: ["Groupe famille : 13:15", "Prévoir ombre pour les invités", "Retour cour intérieure : 14:20"],
-    image: "/manus-storage/matt-sophie-paris_c3bbb026.jpg",
-    imageAlt: "Cour parisienne au crépuscule, image de démonstration",
+    image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=88",
+    imageAlt: "Mariage éditorial dans une cour parisienne",
   },
   {
     id: "matt-cocktail",
@@ -281,8 +264,8 @@ export const moments: Moment[] = [
     documentIds: ["doc-caterer", "doc-sax"],
     music: "Playlist cocktail · Matt Mez live",
     logistics: ["Installation : 14:45", "Accès prestataires : entrée nord", "Comptoir traiteur : aile est"],
-    image: "/manus-storage/matt-sophie-paris_c3bbb026.jpg",
-    imageAlt: "Cour parisienne au crépuscule, image de démonstration",
+    image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=88",
+    imageAlt: "Mariage éditorial dans une cour parisienne",
   },
   {
     id: "matt-dinner",
@@ -367,8 +350,8 @@ export const moments: Moment[] = [
     documentIds: [],
     music: "Playlist déjeuner",
     logistics: ["Service au buffet", "Terrasse ouverte si météo favorable", "Discours : 15:30"],
-    image: "/manus-storage/claire-thomas-lille_f3be1c74.jpg",
-    imageAlt: "Jardin de château après la pluie, image de démonstration",
+    image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1800&q=88",
+    imageAlt: "Mariage éditorial dans un domaine du Nord",
   },
   {
     id: "claire-party",
@@ -383,8 +366,8 @@ export const moments: Moment[] = [
     documentIds: ["doc-dj"],
     music: "DJ set · montée progressive",
     logistics: ["Installation régie : 20:00", "Piste centrale libre", "Fin prévue : 02:00"],
-    image: "/manus-storage/claire-thomas-lille_f3be1c74.jpg",
-    imageAlt: "Jardin de château après la pluie, image de démonstration",
+    image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1800&q=88",
+    imageAlt: "Mariage éditorial dans un domaine du Nord",
   },
 ];
 
