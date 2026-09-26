@@ -29,7 +29,7 @@ export default function WeddingPage() {
             {weddingMoments.length ? weddingMoments.map((moment) => (
               <Link href={`/wedding/${wedding.id}/moment/${moment.id}`} className="timeline-item" key={moment.id}>
                 <span className="timeline-time">{moment.time}</span>
-                <span className="timeline-main"><span className="timeline-title">{moment.title}</span><span className="timeline-location">{moment.location}</span></span>
+                <span className="timeline-main">{moment.image && <span className="timeline-thumb"><img src={moment.image} alt="" loading="lazy" /></span>}<span className="timeline-copy"><span className="timeline-title">{moment.title}</span><span className="timeline-location">{moment.location}</span></span></span>
                 <span className="timeline-note">{moment.duration}</span>
                 <span className="timeline-dot" aria-hidden="true" />
               </Link>
