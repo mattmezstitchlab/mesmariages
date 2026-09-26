@@ -21,6 +21,7 @@ export default function Home() {
           <div className="intro-note">
             <strong>Le bureau de travail</strong>
             Chaque mariage est un dossier vivant. Ouvrez une édition pour entrer directement dans sa Timeline.
+            <Link href="/demande" className="home-public-cta"><span>Vous préparez votre mariage ?</span><strong>Recevoir une première feuille de route ↗</strong></Link>
           </div>
         </section>
 
