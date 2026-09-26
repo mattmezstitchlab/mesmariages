@@ -11,11 +11,15 @@ import DocumentPage from "./pages/DocumentPage";
 import WeddingFormPage from "./pages/WeddingFormPage";
 import ProvidersPage from "./pages/ProvidersPage";
 import NotFound from "./pages/NotFound";
+import InquiryPage from "./pages/InquiryPage";
+import ReportPage from "./pages/ReportPage";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/demande" component={InquiryPage} />
+      <Route path="/rapport/:id" component={ReportPage} />
       <Route path="/new-wedding" component={WeddingFormPage} />
       <Route path="/providers" component={ProvidersPage} />
       <Route path="/wedding/:id/edit" component={WeddingFormPage} />
